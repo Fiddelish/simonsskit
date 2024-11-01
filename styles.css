@@ -1,0 +1,304 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.h1 {
+    color: #ffffff;
+}
+/* main */
+.header__video {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    top: 0;
+    left: 0; /* Changed to left */
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place the video behind other content */
+    overflow: hidden; /* Hide overflow to prevent scrollbars */
+    margin-top: 1vh;
+    border-radius: 15px; /* Add rounded corners to the container */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Optional: add a shadow for depth */
+}
+
+.header__video video {
+    max-width: 50%; /* Ensure video fits within container */
+    max-height: 50%; /* Ensure video fits within container */
+    object-fit: cover; /* Cover the entire header with the video */
+    border-radius: 15px; /* Add rounded corners to the video */
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between; /* Space out the menu items */
+}
+
+.logo {
+    flex: 1; /* Allow the logo to take available space */
+    text-align: center; /* Center the logo */
+}
+
+.navbar {
+    display: flex;
+    justify-content: center; /* Center content */
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    flex: 0 1 auto; /* Prevent logo from growing */
+    text-align: center; /* Center the logo */
+    margin: 0 40px; /* Add margin to separate from menu items */
+}
+
+.navbar img {
+    width: 20vh;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    flex-grow: 1; /* Ensure the list takes available space */
+    justify-content: space-between; /* Space out the items */
+}
+
+.navbar ul li {
+    margin: 0 30px; /* Increased margin for menu items */
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #f90;
+}
+
+
+h1 {
+    color: #009688;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    background: #009688;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #ffffff;
+}
+
+/* optimering */
+
+
+.container {
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    display: grid;
+    width: 50vh; /* Adjust the width as needed */
+    padding: 1vh;
+    margin-top: 10vh;
+    background: #474646ad;
+    border-radius: 2vh;
+    box-shadow: 0 0.5vh 2vh rgba(0, 0, 0, 0.3);
+    
+}
+.container h1{
+    color: #ddd;
+    justify-content:center top; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    display: grid;
+    
+}
+label {
+    display: block;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    font-weight: bold;
+    margin-top: 0vh;
+    color: #bbb;
+}
+
+select {
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 100%;
+    max-width: 30vh;
+    padding: 1vh;
+    font-size: 2vh;
+    border: 0.1vh solid #ddd;
+    border-radius: 1vh;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+select:disabled {
+    background-color: #e0e0e0;
+    cursor: not-allowed;
+}
+
+select:focus {
+    border-color: #575656;
+    outline: none;
+}
+
+/* Info Box */
+.info-box {
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background: #333;
+    padding: 1.2vh;
+    border-radius: 1vh;
+    box-shadow: 0 0.5vh 2vh rgba(0, 0, 0, 0.3);
+    max-width: 30vh;
+    width: 100%;
+    margin-top: 2vh;
+    text-align: center;
+    font-size: 1.8vh;
+    color: #fff;
+}
+
+.info-box h2 {
+    margin: 0;
+    font-size: 2vh;
+    color: #00bcd4;
+}
+
+.info-box p {
+    margin: 0.5vh 0;
+}
+
+.button1 {
+    margin-top:2vh;
+    display: inline-block;
+    padding: 1.5vh 3vh;
+    background-color: #009688;
+    border-radius: 2vh;
+    text-align: center;
+    box-shadow: 0 0.5vh 1vh rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.button1 a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2vh;
+}
+
+.button1:hover {
+    background-color: #00796b;
+    transform: scale(1.05);
+}
+
+
+.car-selection, .model-selection2 {
+    display: flex;
+    justify-content: center;
+    gap: 2vh;
+    margin-top: 5vh;
+    flex-wrap: wrap;
+}
+
+.car-logo, .model-button {
+    display: inline-block;
+    width: 15vh;
+    height: 15vh;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+    text-align: center;
+    
+}
+
+.car-logo img, .model-button {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.car-logo:hover, .model-button:hover {
+    transform: scale(1.1);
+}
+
+.info-box {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.info-box h2 {
+    color: #4a90e2;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.info-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.info-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 1em;
+    color: #333;
+}
+ 
+.info-list li:last-child {
+    border-bottom: none;
+}
+
+.info-list span:first-child {
+    font-weight: bold;
+    color: #666;
+}
+
+.info-list span:last-child {
+    font-weight: bold;
+    color: #4a90e2;
+}
